@@ -19,7 +19,7 @@ Where `hint` acts as the identifier of this tag, `hint_text` is the text content
 
 Here's some handy example to help you quickly catch on:
 
-```ejs
+```js
 {% hint 'A fast, simple & powerful blog framework' 'Hexo' %}
 {% hint 'I\'m the Hint' 'I\'m a Text' %}
 ```
