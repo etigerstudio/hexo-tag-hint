@@ -22,8 +22,10 @@ Here's some handy example to help you quickly catch on:
 ```js
 {% hint 'A fast, simple & powerful blog framework' 'Hexo' %}
 {% hint 'I\'m the Hint' 'I\'m a Text' %}
+{% hint 'hexo-tag-hint' 'misfits' %}
 ```
 
+The last one snippet behaves just like the screenshot above.
 Just note sometimes it's necessary to use `\'` to escape `'` (single quote).
 
 ## Installation Instructions
