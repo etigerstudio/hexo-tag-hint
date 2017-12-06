@@ -1,0 +1,29 @@
+{
+    "name": "hexo-tag-hint",
+    "title": "hexo-tag-hint",
+    "description": "A Hexo tag plugin displaying text hint.",
+    "version": "0.1.0",
+    "main": "index",
+    "homepage": "http://feverfree.io",
+    "author": {
+        "name": "E-Tiger Studio",
+        "email": "etigerstudio@gmail.com",
+        "url": "http://feverfree.io"
+    },
+    "keywords": [
+        "hexo",
+        "hint",
+        "tooltip",
+        "ui",
+        "sass",
+        "css"
+    ],
+    "bugs": {
+        "url": "https://github.com/etigerstudio/hexo-tag-hint/issues"
+    },
+    "license": "GNU AGPLv3",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/etigerstudio/hexo-tag-hint.git"
+    },
+}
