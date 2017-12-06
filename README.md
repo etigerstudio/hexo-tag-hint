@@ -5,6 +5,8 @@
 
 `hexo-tag-hint` is a plugin for [Hexo](https://hexo.io) that parses `hint` tags,  which translate into a normal post content but will additionally show up a floating tooltip containing preset hint text when getting **hovered** or clicked. It's achieved by wrapping around and slightly adjusting the [`hint.css`](https://github.com/chinchang/hint.css) pure-css tooltip library.
 
+Current version: `0.1.1`
+
 ## Basic Syntax
 
 Insert this little [EJS](http://ejs.co/) snippet anywhere you want to show your hints:
