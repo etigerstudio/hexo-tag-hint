@@ -3,7 +3,7 @@
 hexo-tag-hint is free and open source under the GNU AGPLv3.
 > Copyright (c) 2017 E-Tiger Studio
 
-Hint.css
+[`hint.css`](https://github.com/chinchang/hint.css)
 > Copyright (c) 2013-2016 Kushagra Gour
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
