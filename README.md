@@ -5,26 +5,26 @@
 
 <img src="https://raw.githubusercontent.com/etigerstudio/hexo-tag-hint/master/hexo-tag-hint_screenshot.png" alt="hexo-tag-hint screenshot" title="hexo-tag-hint screenshot" align="right" width="150" height="108" />
 
-`hexo-tag-hint` is a plugin for [Hexo](https://hexo.io) that parses `hint` tags,  which translate into a normal post content but will additionally show up a floating tooltip containing preset hint text when getting **hovered** or clicked. It's achieved by wrapping around and slightly adjusting the [`hint.css`](https://github.com/chinchang/hint.css) pure-css tooltip library.
+`hexo-tag-hint` is a plugin for [Hexo](https://hexo.io) that parses `hint` tags,  which translate into a normal post content but will additionally show up a floating tooltip containing preset hint text when getting **hovered** or clicked. It's achieved by wrapping around and slightly tweaking the [`hint.css`](https://github.com/chinchang/hint.css) pure-css tooltip library.
 
 ## Basic Syntax
 
 Insert this little [EJS](http://ejs.co/) snippet anywhere you want to show your hints:
 
 ```js
-{% hint 'hint_text' 'body_text' %}
+{% hint 'body_text' 'hint_text' %}
 ```
 
-Where `hint` acts as the identifier of this tag, `hint_text` is the text content inside hint bubble, `body_text` is the normal post body text.
+Where `hint` acts as the identifier of this tag, `body_text` is the normal post body text, `hint_text` is the text content inside hint bubble.
 
 ## Example Usage
 
 Here's some handy example to help you quickly catch on:
 
 ```js
-{% hint 'A fast, simple & powerful blog framework' 'Hexo' %}
-{% hint 'I\'m the Hint' 'I\'m a Text' %}
-{% hint 'hexo-tag-hint' 'misfits' %}
+{% hint 'Hexo' 'A fast, simple & powerful blog framework' %}
+{% hint 'I\'m a Text' 'I\'m the Hint' %}
+{% hint 'misfits' 'hexo-tag-hint' %}
 ```
 
 The last one snippet behaves just like the screenshot above.
