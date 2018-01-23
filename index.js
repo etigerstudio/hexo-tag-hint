@@ -3,7 +3,7 @@
 /**
  * hexo-tag-hint
  * https://github.com/etigerstudio/hexo-tag-hint
- * Copyright (c) 2017, E-Tiger Studio
+ * Copyright (c) 2017-2018, E-Tiger Studio
  * Licensed under the GNU AGPLv3 license.
  *
  * Syntax:
