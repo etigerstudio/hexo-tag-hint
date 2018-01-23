@@ -51,7 +51,7 @@ $ npm update hexo-tag-hint
 ## License
 
 hexo-tag-hint is free and open source under the GNU AGPLv3.
-> Copyright (c) 2017 E-Tiger Studio
+> Copyright (c) 2017-2018 E-Tiger Studio
 
 [`hint.css`](https://github.com/chinchang/hint.css)
 > Copyright (c) 2013-2016 Kushagra Gour
