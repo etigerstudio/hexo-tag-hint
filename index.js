@@ -44,6 +44,8 @@ hexo.extend.filter.register('after_post_render', function(data) {
 
 // {% hint 'body_text' 'hint_text' %}
 hexo.extend.tag.register('hint', function(args) {
-    var raw = '<a href="javascript:void(0);" class="hint--top hint--rounded hint--info" aria-label="' + args[1] + '">' + args[0] + '</a>'
+    var raw = '<span style="border-bottom: 1px dashed #389fff;">' +
+    '<a href="javascript:void(0);" class="hint--top hint--rounded hint--info" aria-label="' + 
+    args[1] + '">' + args[0] + '</a></span>'
     return raw;
 });
