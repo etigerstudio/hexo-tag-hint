@@ -93,3 +93,5 @@ typings/
 
 Test/
 .npmignore
+
+.idea
