@@ -10,35 +10,40 @@
  *  {% hint 'body_text' 'hint_text' %}
  */
 
-var counter = 0;
-var fs = require('hexo-fs'),
-    util = require('hexo-util'),
-    path = require('path'),
-    assetDir = 'assets',
-    cssDir = 'css',
-    fileName = 'hint.min.css',
-    srcPath = path.join(cssDir, fileName);
+// var counter = 0;
+// var fs = require('hexo-fs'),
+//     util = require('hexo-util'),
+//     path = require('path'),
+//     assetDir = 'assets',
+//     cssDir = 'css',
+//     fileName = 'hint.min.css',
+//     srcPath = path.join(cssDir, fileName);
+//
+// var tagHintConfig = hexo.config.tag_hint;
+// var filePath;
+// if (tagHintConfig && tagHintConfig.use_cdn && tagHintConfig.cdn_base_url) {
+//     filePath = path.join(tagHintConfig.cdn_base_url, srcPath);
+// } else {
+//     filePath = path.join(assetDir, srcPath);
+//     var physicalPath = path.join(__dirname, srcPath);
+//     hexo.extend.generator.register(fileName, function() {
+//         return {
+//             path: filePath,
+//             data: function data() {
+//                 return fs.createReadStream(physicalPath);
+//             }
+//         };
+//     });
+// }
 
-var tagHintConfig = hexo.config.tag_hint;
-var filePath;
-if (tagHintConfig && tagHintConfig.use_cdn && tagHintConfig.cdn_base_url) {
-    filePath = path.join(tagHintConfig.cdn_base_url, srcPath);
-} else {
-    filePath = path.join(assetDir, srcPath);
-    var physicalPath = path.join(__dirname, srcPath);
-    hexo.extend.generator.register(fileName, function() {
-        return {
-            path: filePath,
-            data: function data() {
-                return fs.createReadStream(physicalPath);
-            }
-        };
-    });
-}
+var util = require('hexo-util');
 
 hexo.extend.filter.register('after_post_render', function(data) {
-    var root = hexo.config.root ? hexo.config.root : '/';
-    data.content = '<link rel="stylesheet" href="' + path.join('/', filePath) + '"></link>' + data.content;
+    data.content =
+        util.htmlTag('link', {rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.2.0/css/hint.min.css'}) +
+        data.content;
+    // var root = hexo.config.root ? hexo.config.root : '/';
+    // data.content = '<link rel="stylesheet" href="' + path.join('/', filePath) + '"></link>' + data.content;
     return data;
 });
 
