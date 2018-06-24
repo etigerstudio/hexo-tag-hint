@@ -2,7 +2,7 @@
     "name": "hexo-tag-hint",
     "title": "hexo-tag-hint",
     "description": "A Hexo tag plugin displaying text hint.",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "main": "index",
     "homepage": "http://feverfree.io",
     "author": {

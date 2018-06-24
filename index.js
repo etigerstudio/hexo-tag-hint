@@ -40,7 +40,7 @@ var util = require('hexo-util');
 
 hexo.extend.filter.register('after_post_render', function(data) {
     data.content =
-        util.htmlTag('link', {rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.2.0/css/hint.min.css'}) +
+        util.htmlTag('link', {rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.2.1/css/hint.min.css'}) +
         data.content;
     // var root = hexo.config.root ? hexo.config.root : '/';
     // data.content = '<link rel="stylesheet" href="' + path.join('/', filePath) + '"></link>' + data.content;
