@@ -2,13 +2,13 @@
     "name": "hexo-tag-hint",
     "title": "hexo-tag-hint",
     "description": "A Hexo tag plugin displaying text hint.",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "main": "index",
-    "homepage": "http://feverfree.io",
+    "homepage": "https://github.com/etigerstudio/hexo-tag-hint",
     "author": {
         "name": "E-Tiger Studio",
         "email": "etigerstudio@gmail.com",
-        "url": "http://feverfree.io"
+        "url": "https://etiger.studio"
     },
     "keywords": [
         "hexo",
