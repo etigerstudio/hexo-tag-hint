@@ -9,7 +9,7 @@
 
 ## Basic Syntax
 
-Insert this little [EJS](http://ejs.co/) snippet anywhere you want to show your hints:
+Insert this little [Nunjucks](https://github.com/mozilla/nunjucks) snippet anywhere you want to show your hints:
 
 ```js
 {% hint 'body_text' 'hint_text' %}
