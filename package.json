@@ -21,7 +21,7 @@
     "bugs": {
         "url": "https://github.com/etigerstudio/hexo-tag-hint/issues"
     },
-    "license": "GNU AGPLv3",
+    "license": "MIT",
     "repository": {
         "type": "git",
         "url": "git://github.com/etigerstudio/hexo-tag-hint.git"
