@@ -12,7 +12,7 @@
  */
 
 const util = require('hexo-util');
-const version = '0.3.0';
+const version = '0.3.1';
 const styleClass = 'hint--info hint--rounded hint--top';
 const newLineDelimiter = '\u000A';
 

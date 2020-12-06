@@ -2,7 +2,7 @@
     "name": "hexo-tag-hint",
     "title": "hexo-tag-hint",
     "description": "A Hexo tag plugin displaying text hint.",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "main": "index",
     "dependencies": {},
     "devDependencies": {
