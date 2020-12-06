@@ -3,10 +3,10 @@
 <p align="center">
   <img src="https://badge.fury.io/js/hexo-tag-hint.svg" href="https://badge.fury.io/js/hexo-tag-hint" alt="npm version"/>&nbsp;
   <img alt="npm downloads" src="https://img.shields.io/npm/dt/hexo-tag-hint" href="https://badge.fury.io/js/hexo-tag-hint">&nbsp;
-  <img src="https://data.jsdelivr.com/v1/package/npm/hexo-tag-hint/badge/year?style=rounded" href="https://www.jsdelivr.com/package/npm/hexo-tag-hint" alt="jsdelivr downloads"/>
+  <img src="https://data.jsdelivr.com/v1/package/npm/hexo-tag-hint/badge/all?style=rounded" href="https://www.jsdelivr.com/package/npm/hexo-tag-hint" alt="jsdelivr downloads"/>
 </p>
 
-`hexo-tag-hint` is a simplistic plugin for [Hexo](https://hexo.io) which presents a floating bubble containing the hint text when the content text gets *hovered* or *clicked* (yes, mobile-ready!).
+`hexo-tag-hint` is a simplistic plugin for [Hexo](https://hexo.io) which enables presenting a floating bubble containing the hint text when the content text gets *hovered* or *clicked* (yes, mobile-ready!).
 
 ## 💡 Basic Syntax
 
@@ -57,6 +57,8 @@ $ npm install hexo-tag-hint@latest # force update to latest version
 - [x] Add support for multi-line hints
 - [ ] Strip redundant style classes
 - [ ] Make Color theme configurable
+- [ ] Make CDN configurable & switchable
+- [ ] Ensure text stability during animation
 
 ✏️*Open issues to request for more features!*
 
