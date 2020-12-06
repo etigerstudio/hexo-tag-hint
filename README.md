@@ -1,13 +1,14 @@
+![hero](hero.png)
 
-# hexo-tag-hint
+<p align="center">
+  <img src="https://badge.fury.io/js/hexo-tag-hint.svg" href="https://badge.fury.io/js/hexo-tag-hint" alt="npm version"/>&nbsp;
+  <img alt="npm downloads" src="https://img.shields.io/npm/dt/hexo-tag-hint" href="https://badge.fury.io/js/hexo-tag-hint">&nbsp;
+  <img src="https://data.jsdelivr.com/v1/package/npm/hexo-tag-hint/badge/year?style=rounded" href="https://www.jsdelivr.com/package/npm/hexo-tag-hint" alt="jsdelivr downloads"/>
+</p>
 
-[![npm version](https://badge.fury.io/js/hexo-tag-hint.svg)](https://badge.fury.io/js/hexo-tag-hint)
+`hexo-tag-hint` is a simplistic plugin for [Hexo](https://hexo.io) which presents a floating bubble containing the hint text when the content text gets *hovered* or *clicked* (yes, mobile-ready!).
 
-<img src="https://raw.githubusercontent.com/etigerstudio/hexo-tag-hint/master/hexo-tag-hint_screenshot.png" alt="hexo-tag-hint screenshot" title="hexo-tag-hint screenshot" align="right" width="150" height="108" />
-
-`hexo-tag-hint` is a plugin for [Hexo](https://hexo.io) that parses `hint` tags,  which translate into a normal post content but will additionally show up a floating tooltip containing preset hint text when getting **hovered** or clicked. It's achieved by wrapping around and slightly tweaking the [`hint.css`](https://github.com/chinchang/hint.css) pure-css tooltip library.
-
-## Basic Syntax
+## 💡 Basic Syntax
 
 Insert this little [Nunjucks](https://github.com/mozilla/nunjucks) snippet anywhere you want to show your hints:
 
@@ -15,43 +16,51 @@ Insert this little [Nunjucks](https://github.com/mozilla/nunjucks) snippet anywh
 {% hint 'body_text' 'hint_text' %}
 ```
 
-Where `hint` acts as the identifier of this tag, `body_text` is the normal post body text, `hint_text` is the text content inside hint bubble.
+Where `body_text` is the normal post body text, `hint_text` is the text that should be presented inside the hint bubble. Use `\'` to escape `'` if necessary.
 
-## Example Usage
+<img src="single-line-screencast.gif" alt="Plugin single-line screencast" title="Plugin single-line screencast" align="right" width="159" height="95" />
 
-Here's some handy example to help you quickly catch on:
+E.g.:
 
 ```js
-{% hint 'Hexo' 'A fast, simple & powerful blog framework' %}
-{% hint 'I\'m a Text' 'I\'m the Hint' %}
 {% hint 'misfits' 'hexo-tag-hint' %}
 ```
 
-The last one snippet behaves just like the screenshot above.
-Just note sometimes it's necessary to use `\'` to escape `'` (single quote).
+## 📖 Multi-line Support
 
-## Installation Instructions
+Multi-line hints are supported right now🎉. Append additional hint text lines to build a multi-line hint:
 
-It takes only one command to integrate this plugin into your Hexo package:
-
-```bash
-$ npm install hexo-tag-hint --save
+```js
+{% hint 'body_text' 'hint_text_1st_line' 'hint_text_2nd_line' ... %}
 ```
 
-Execute this line of command in your Hexo project directory, then it's done! 🎉
+<img src="multi-line-screencast.gif" alt="Plugin multi-line screencast" title="Plugin multi-line screencast" align="right" width="201" height="117" />
 
-## Update Plugin
+E.g.:
 
-To update the plugin, execute the command below:
-
-```bash
-$ npm update hexo-tag-hint
+```js
+{% hint 'Hexo' 'A fast, simple &' 'powerful blog framework' %}
 ```
 
-## License
+## 🔌 Install & Update
 
-hexo-tag-hint is free and open source under the GNU AGPLv3.
-> Copyright (c) 2017-2018 E-Tiger Studio
+Execute following one-liners to integrate this plugin into your Hexo project, or to update the plugin:
 
-[`hint.css`](https://github.com/chinchang/hint.css)
-> Copyright (c) 2013-2016 Kushagra Gour
+```bash
+$ npm install hexo-tag-hint # install this plugin
+$ npm update hexo-tag-hint # update the plugin
+```
+
+## 🚀 Roadmap
+
+- [x] Add support for multi-line hints
+- [ ] Strip redundant style classes
+- [ ] Make Color theme configurable
+
+✏️*Open issues to request for more features!*
+
+## 🙌 Special Thanks
+
+Main feature of presenting hint bubble is heavily backed by [`hint.css`](https://github.com/chinchang/hint.css), an awesome CSS only tooltip library.
+
+> Brought to you with ❤️ by E-Tiger Studio, 2017-2020. 
