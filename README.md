@@ -49,6 +49,7 @@ Execute following one-liners to integrate this plugin into your Hexo project, or
 ```bash
 $ npm install hexo-tag-hint # install this plugin
 $ npm update hexo-tag-hint # update the plugin
+$ npm install hexo-tag-hint@latest # force update to latest version
 ```
 
 ## 🚀 Roadmap
