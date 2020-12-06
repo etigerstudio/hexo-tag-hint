@@ -33,5 +33,6 @@
     "repository": {
         "type": "git",
         "url": "git://github.com/etigerstudio/hexo-tag-hint.git"
-    }
+    },
+    "jsdelivr": "dist/hexo-tag-hint.min.css"
 }
