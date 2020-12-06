@@ -1,0 +1,3 @@
+[submodule "hint.css"]
+	path = hint.css
+	url = git@github.com:chinchang/hint.css.git
